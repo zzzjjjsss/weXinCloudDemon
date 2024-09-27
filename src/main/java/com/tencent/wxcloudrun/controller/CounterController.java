@@ -44,6 +44,7 @@ public class CounterController {
     if (counter.isPresent()) {
       count = counter.get().getCount();
     }
+    logger.info("hello word");
 
     return ApiResponse.ok(count);
   }
